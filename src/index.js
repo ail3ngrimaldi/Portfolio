@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import '../src/styles/style.css';
+import ButtonAppBar from './components/ButtonAppBar';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>My portfolio</h1>
+    <ButtonAppBar />
+
   </React.StrictMode>,
   document.getElementById('root')
 );

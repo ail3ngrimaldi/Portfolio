@@ -11,15 +11,15 @@ const useStyles = makeStyles(theme=> ({
         margin: theme.spacing(1),
     },
     title: {
-        color: "grey"
+        color: "white"
     },
     subtitle: {
-        color: "red",
+        color: "white",
         marginBotton: "3rem"
     },
     typedContainer: {
         position: "absolute",
-        top: "50%",
+        top: "30%",
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: "100ww",

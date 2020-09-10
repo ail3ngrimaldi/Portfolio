@@ -8,11 +8,10 @@ const useStyles = makeStyles(theme=> ({
     avatar: {
         width: theme.spacing(25),
         height: theme.spacing(25),
-        margin: theme.spacing(1),
+        margin: theme.spacing(10),
     },
     title: {
-        color: "white",
-        marginTop: "15%"
+        color: "white"
     },
     subtitle: {
         color: "#D5DBDB",
@@ -20,7 +19,7 @@ const useStyles = makeStyles(theme=> ({
     },
     typedContainer: {
         position: "absolute",
-        top: "30%",
+        top: "35%",
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: "100ww",

@@ -6,7 +6,7 @@ import {makeStyles} from '@material-ui/styles'
 const useStyles = makeStyles({
     particlesCanva: {
         position: "absolute",
-        opacity: "0.3"
+        opacity: "0.2"
     }
 })
 
@@ -27,10 +27,12 @@ const Home = () => {
                                 value_area: 900
                             }
                         },
-                        shape: "circle",
+                        shape: "star",
                         stroke: {
                             width: 5,
-                            color: "tomato"
+                            color: {
+                                value: "random"
+                            }
                         }
                     },
                     size: {

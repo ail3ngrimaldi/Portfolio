@@ -1,10 +1,9 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Avatar, Grid, Box } from '@material-ui/core';
 import Typed from 'react-typed';
 import avatar from '../avatar.jpeg';
-import CardEducation from './CardEducation';
-import CardExperience from './CardExperience';
+import ComponentCards from '../components/Cards'
 
 const useStyles = makeStyles(theme=> ({
     avatar: {
@@ -50,13 +49,8 @@ const Header = () => {
             >
             </Typed>
         </Typography>
-        <br/>
-        <Grid>
-        <CardEducation/>
-        <CardExperience/>
-        </Grid>
+        <ComponentCards/>
     </Box>
-    
     );
 };
 

@@ -10,7 +10,7 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-// import logoHenry
+// import logos HTML, CSS, JS, etc.
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   } //NO CENTRA EL TEXTO, ARREGLAR.
 }));
 
-export default function CardExperience() {
+export default function CardSkills() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -46,7 +46,7 @@ export default function CardExperience() {
   return (
     <Card className={classes.root}>
       <CardHeader     
-        title="Experience"
+        title="Skills"
       />
       <CardMedia
         className={classes.media}
@@ -68,7 +68,7 @@ export default function CardExperience() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
-          Henry Labs
+          Javascript, React, SQL.
           </Typography>
         </CardContent>
       </Collapse>

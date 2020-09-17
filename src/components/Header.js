@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Avatar, Grid, Box } from '@material-ui/core';
+import { Typography, Avatar, Grid, Box, Container } from '@material-ui/core';
 import Typed from 'react-typed';
 import avatar from '../avatar.jpeg';
 import ComponentCards from '../components/Cards'
@@ -26,12 +26,16 @@ const useStyles = makeStyles(theme=> ({
         width: "100ww",
         textAlign: "center",
         zIndex: 1
+    },
+    main: {
+        display: 'block',
     }
 }))
 
 const Header = () => {
     const classes = useStyles()
     return (
+    <Container component="main" className={classes.main} maxWidth="sm">
     <Box className={classes.typedContainer}>
         <Grid container justify="center">
              <Avatar className={classes.avatar} src={avatar} alt="Ailen Grimaldi" />
@@ -51,6 +55,7 @@ const Header = () => {
         </Typography>
         <ComponentCards/>
     </Box>
+    </Container>
     );
 };
 

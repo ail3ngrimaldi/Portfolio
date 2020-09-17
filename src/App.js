@@ -1,21 +1,24 @@
 import React from 'react';
 import './App.css';
 import Home from './components/index';
-import Footer from './components/Footer';
+import StickyFooter from './components/Footer2';
 
 function App() {
 
   return (
+    <div>
     <div style={{
-      position: "absolute",
-      // top: 0,
-      // left: 0,
+      position: "relative",
+      top: 0,
+      left: 0,
       width: "100%",
-      height: "100%",
+      height: "100vh",
+      minHeight: "500px"
     }}
     className="App"> 
     <Home/>
-    <Footer/>
+    </div> 
+    <StickyFooter/>
   </div> 
   );
 }
